@@ -4,9 +4,9 @@
 buildscript {
 
     ext.kotlin_version = "1.3.72"
-    ext.googleServicesVersion = "4.2.0"
+    ext.googleServicesVersion = "4.3.10"
     ext.navigationVersion = "2.3.2"
-    ext.daggerHilt = "2.28-alpha"
+    ext.daggerHilt = "2.40.5"
 
     repositories {
         google()
@@ -20,7 +20,6 @@ buildscript {
         classpath "com.google.gms:google-services:$googleServicesVersion"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$daggerHilt"
-
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -52,8 +51,8 @@ ext {
 
     // dagger Hilt
 
-    daggerHiltApp = "2.28.3-alpha"
-    daggerHiltViewModelApp = "1.0.0-alpha02"
+    daggerHiltApp = "2.40.5"
+    daggerHiltViewModelApp = "1.0.0-alpha03"
 
     //RxJava
     rxJavaVersion = "2.1.3"
