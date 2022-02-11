@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(){
 
     // Callback
     private  var onItemClickListener: ((product:Product)-> Unit) = { product ->
-        Toast.makeText(this, "Product: " + product.name + "  "+ "Price: $" + product.prece, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Product: " + product.name + "  "+ "Price: $" + product.price, Toast.LENGTH_SHORT).show()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

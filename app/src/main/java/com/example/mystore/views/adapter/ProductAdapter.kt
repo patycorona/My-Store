@@ -36,7 +36,8 @@ class ProductAdapter(
         //viewHolder.imgProduct.setImageDrawable(context.getDrawable(dataSource[position].productPhoto))
 
         Glide.with(context)
-            .load(context.getDrawable(dataSource[position].productPhoto))
+            //.load(context.getDrawable(dataSource[position].productPhoto))
+            .load(dataSource[position].productPhoto)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .centerCrop()
             .circleCrop()

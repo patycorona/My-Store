@@ -4,10 +4,14 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 import kotlinx.android.parcel.RawValue
 
-//@RawValue
-data class ProductModel(
-    var hits: MutableList<Product> = mutableListOf(),
-    val page: Int = 0,
-    val totalPages: Int = 0,
-    val hitsPerPage: Int = 0
-)
+@Parcelize
+class ProductModel(
+    var idProduct:Int,
+    var name: String = "",
+    var price: Double = 0.0,
+    var discount: Int,
+    var productPhoto: String,
+    var stock: Int
+): Parcelable {}
+
+

@@ -23,7 +23,7 @@ class ProductViewModel @Inject constructor(
     }
 
     fun getProduct(){
-        compositeDisposable += productRepository.getProduct()
+        compositeDisposable += productRepository.getProducts()
                 .subscribeOn(Schedulers.io())
                 .subscribe({listProduct ->
                     listProducts.postValue(
